@@ -1,0 +1,9 @@
+<app-header (FeatureSelected)="ContentShow($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<app-recipes *ngIf = "featureShown==='recipe'"></app-recipes>
+<app-shopping-list *ngIf = "featureShown==='shopping-list'"></app-shopping-list>
+    </div> 
+   </div>
+</div>
